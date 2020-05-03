@@ -70,7 +70,7 @@ fn declare_queue(publish_channel: &Channel, queue_name: &str) {
         .expect("queue_declare");
 }
 
-fn send_amq_message(publish_channel: &Channel, queue_name: &str, payload: &[u8]) {
+pub fn send_amq_message(publish_channel: &Channel, queue_name: &str, payload: &[u8]) {
     publish_channel
         .basic_publish(
             "",

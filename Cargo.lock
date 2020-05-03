@@ -282,20 +282,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "deepspeech"
-version = "0.7.0"
-source = "git+https://github.com/RustAudio/deepspeech-rs.git#3ba2f8ab6eb661545b3384524dd6546a533ec217"
-dependencies = [
- "deepspeech-sys",
- "libc",
-]
-
-[[package]]
-name = "deepspeech-sys"
-version = "0.7.0"
-source = "git+https://github.com/RustAudio/deepspeech-rs.git#3ba2f8ab6eb661545b3384524dd6546a533ec217"
-
-[[package]]
 name = "digest"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1679,7 +1665,6 @@ checksum = "efd1f82c56340fdf16f2a953d7bda4f8fdffba13d93b00844c25572110b26079"
 name = "trebek"
 version = "0.1.0"
 dependencies = [
- "deepspeech",
  "lapin",
  "rand",
  "serde",
